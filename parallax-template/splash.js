@@ -1,6 +1,5 @@
-window.onload = () => {
-    window.setTimeout(() => {
-        splash.style.color = "#F06449";
-        window.location = "index.html";
-    }, 2000);
-}
+// window.onload = () => {
+//     window.setTimeout(() => {
+//         window.location = "index.html";
+//     }, 2000);
+// }

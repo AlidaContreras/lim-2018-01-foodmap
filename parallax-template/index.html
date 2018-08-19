@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Parallax Template - Materialize</title>
+  <title>BARRANCOeat</title>
+  <link rel="shortcut icon" href="https://financialtribune.com/sites/default/files/field/image/17january/12_fda.png" type="image/x-icon">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,13 +14,13 @@
 </head>
 
 <body>
-  <nav class="brown lighten-3">
-    <div class="nav-wrapper">
+  <nav>
+    <div class="nav-wrapper  teal lighten-2">
       <form>
         <div class="input-field">
           <input id="search" type="search" placeholder="¿Que quieres comer?" required>
           <label class="label-icon" for="search">
-            <i class="material-icons  ">search</i>
+            <i class="material-icons">search</i>
           </label>
           <i class="material-icons">close</i>
         </div>
@@ -27,59 +28,60 @@
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
-        <br>
-        <br>
-        <h1 class="header center teal-text text-lighten-2">Encuentra que quieres comer!!!</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br>
-        <br>
-
+        <h1 class="header center with-text">Encuentra esos gustitos...</h1>
       </div>
     </div>
-
     <div class="parallax">
       <img src="background1.jpg" alt="Unsplashed background img 1">
     </div>
   </div>
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12">
-          <div class="icon-block">
-            <!-- <div class="input-field col s12"> -->
-            <select name="selectType" id="selectType">
-              <option value="" disabled selected>¿Que tipo de comida desea?</option>
-              <option value="Italiana">Italiana</option>
-              <option value="Vegetariano">Vegetariano</option>
-              <option value="Polleria">Polleria</option>
-              <option value="Cafeteria">Cafeteria</option>
-            </select>
+  <div class="blue lighten-5">
+    <div class="container">
+      <div class="section">
+        <div class="row center">
+          <div class="col s12">
+            <div class="input-field col  s12">
+              <select name="selectType" id="selectType">
+                <option value="" disabled selected>¿Que tipo de comida desea?</option>
+                <option value="Italiana">Italiana</option>
+                <option value="Vegetariano">Vegetariano</option>
+                <option value="Polleria">Polleria</option>
+                <option value="Cafeteria">Cafeteria</option>
+              </select>
+            </div>
           </div>
         </div>
-        <div id="viewSearch">
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <div id="viewSearch">
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Gracias!</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   </div>
+  </div>
 
-  <footer class="page-footer blue-grey teal">
-    <div class="container">
-      Made by Alida Contreras
+  <footer class="page-footer teal">
+    <div class="">
+      <div class="container">
+        Made by Alida Contreras
+      </div>
     </div>
   </footer>
-
 
   <!--  Scripts-->
   <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>

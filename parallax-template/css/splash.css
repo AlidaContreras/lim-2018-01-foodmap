@@ -1,0 +1,9 @@
+body{
+    background:linear-gradient(rgba(8, 155, 99, 0.844), rgba(39, 174, 197, 0.933));
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+.parallax-container .valing-wraper{
+    height: 100%;
+}
