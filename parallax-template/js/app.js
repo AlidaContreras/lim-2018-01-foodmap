@@ -19,23 +19,24 @@ selectType.addEventListener('change', () => {
         cont ++
         viewSearch.innerHTML += `
         <div>
-          <h3>${doc.data().name}</h3>
-          <br>
-          <!-- Modal Trigger -->
-          <a class="waves-effect  btn modal-trigger" href="#modal1${cont}" >Ver mas</a>
-          <!-- Modal Structure -->
-          <div id="modal1${cont}" class="modal">
-            <div class="modal-content">
-              <h4>${doc.data().name}</h4>
-              <p>Tipo de Comida: ${doc.data().type}</p>
-              <p>Lugar: ${doc.data().place}</p>
-              <p>Direcccion: ${doc.data().address}</p>
-              <p>Tipo de pago: ${doc.data().pay}</p>              
-            </div>
+        <h3>${doc.data().name}</h3>
+        <br>
+        <!-- Modal Trigger -->
+        <a class="waves-effect  btn modal-trigger" href="${'#modal1'}" >Ver mas</a>
+        <!-- Modal Structure -->
+        <div id="${'modal1'}" class="${'modal'}">
+          <div class="modal-content">
+            <h4>${doc.data().name}</h4>
+            <p>Tipo de Comida: ${doc.data().type}</p>
+            <p>Lugar: ${doc.data().place}</p>
+            <p>Direcccion: ${doc.data().address}</p>
+            <p>Tipo de pago: ${doc.data().pay}</p>
+            
+          </div>
           <div class="modal-footer">
-              <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Gracias!</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Gracias!</a>
+          </div>
         </div>
-        
         `
       }
     });
@@ -53,19 +54,21 @@ search.addEventListener('keyup', (event) => {
         <div>
         <h3>${doc.data().name}</h3>
         <br>
-         <!-- Modal Trigger -->
-          <a class="waves-effect  btn modal-trigger" href="${'#modal1'}" >Ver mas</a>
-          <!-- Modal Structure -->
-          <div id="${'modal1'}" class="${'modal'}">
-            <div class="modal-content">
-              <h4>${doc.data().name}</h4>
-              <p>Tipo de Comida: ${doc.data().type}</p>
-              <p>Lugar: ${doc.data().place}</p>
-              <p>Direcccion: ${doc.data().address}</p>
-              <p>Tipo de pago: ${doc.data().pay}</p>
-            </div>
+        <!-- Modal Trigger -->
+        <a class="waves-effect  btn modal-trigger" href="${'#modal1'}" >Ver mas</a>
+        <!-- Modal Structure -->
+        <div id="${'modal1'}" class="${'modal'}">
+          <div class="modal-content">
+            <h4>${doc.data().name}</h4>
+            <p>Tipo de Comida: ${doc.data().type}</p>
+            <p>Lugar: ${doc.data().place}</p>
+            <p>Direcccion: ${doc.data().address}</p>
+            <p>Tipo de pago: ${doc.data().pay}</p>
+            
+          </div>
           <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Gracias!</a>
+          </div>
         </div>
         `
       }
