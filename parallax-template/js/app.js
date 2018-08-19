@@ -15,8 +15,6 @@ selectType.addEventListener('change', () => {
     querySnapshot.forEach(function (doc) {
       doc.data() //is never undefined for query doc snapshots
       if (selectType.value == `${doc.data().type}`) {
-        const cont = 0;
-        cont ++
         viewSearch.innerHTML += `
         <div>
         <h3>${doc.data().name}</h3>
@@ -49,7 +47,6 @@ search.addEventListener('keyup', (event) => {
     querySnapshot.forEach(function (doc) {
       doc.data() //is never undefined for query doc snapshots
       if (event.target.value == `${doc.data().otro}`) {
-        
         viewSearch.innerHTML += `
         <div>
         <h3>${doc.data().name}</h3>
