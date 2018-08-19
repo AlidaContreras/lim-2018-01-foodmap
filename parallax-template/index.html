@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="brown lighten-3">
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" placeholder="¿Que quieres comer?" required>
+          <label class="label-icon" for="search">
+            <i class="material-icons  ">search</i>
+          </label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br>
+        <br>
+        <h1 class="header center teal-text text-lighten-2">Encuentra que quieres comer!!!</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br>
+        <br>
+
+      </div>
+    </div>
+
+    <div class="parallax">
+      <img src="background1.jpg" alt="Unsplashed background img 1">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <!-- <div class="input-field col s12"> -->
+            <select name="selectType" id="selectType">
+              <option value="" disabled selected>¿Que tipo de comida desea?</option>
+              <option value="Italiana">Italiana</option>
+              <option value="Vegetariano">Vegetariano</option>
+              <option value="Polleria">Polleria</option>
+              <option value="Cafeteria">Cafeteria</option>
+            </select>
+          </div>
+        </div>
+        <div id="viewSearch">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="page-footer blue-grey teal">
+    <div class="container">
+      Made by Alida Contreras
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBqphFAmBqG8E4otfmgWVuhKT_M40-JRQk",
+      authDomain: "foodmap-e3ca3.firebaseapp.com",
+      databaseURL: "https://foodmap-e3ca3.firebaseio.com",
+      projectId: "foodmap-e3ca3",
+      storageBucket: "foodmap-e3ca3.appspot.com",
+      messagingSenderId: "414259483062"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
